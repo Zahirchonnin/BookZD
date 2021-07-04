@@ -36,7 +36,6 @@ def booksc(searchWord):
     options.headless = True
     args = ["hide_console", ]
     driver = webdriver.Chrome(
-        executable_path=os.getcwd() + '.\\cache\\fd5be9385213ef3232fe539f1c1feeec47f04b92a2f414919aa503334966ebaf', 
         service_args=args,
         options=options
         )
@@ -88,7 +87,6 @@ def getVpn():
             }
     options.add_experimental_option("prefs",prefs)
     driver = webdriver.Chrome(
-        executable_path=os.getcwd() + '.\\cache\\fd5be9385213ef3232fe539f1c1feeec47f04b92a2f414919aa503334966ebaf', 
         service_args=args,
         options=options
         )
@@ -118,7 +116,6 @@ def download(url, vpn=False):
             }
         options.add_experimental_option("prefs", prefs)
         driver = webdriver.Chrome(
-            executable_path=os.getcwd() + '.\\cache\\fd5be9385213ef3232fe539f1c1feeec47f04b92a2f414919aa503334966ebaf', 
             service_args=args,
             options=options
             )
